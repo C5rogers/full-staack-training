@@ -9,6 +9,8 @@ const emitingFunction=()=>{
     emit('toogle-image',{result:showImage.value})
 }
 
+
+
 </script>
 
 <template>
@@ -32,7 +34,7 @@ const emitingFunction=()=>{
         justify-center
         ">
             <div class="">
-                <router-link :to="{name:'Search'}"><i class="fa-solid fa-arrow-right"></i></router-link>
+                <router-link :to="{name:'Search',params:{query:'searchEngine'}}"><i class="fa-solid fa-arrow-right"></i></router-link>
             </div>
             <div class="
             font-bold

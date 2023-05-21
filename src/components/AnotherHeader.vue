@@ -1,5 +1,16 @@
 <script setup>
+import { ref } from 'vue';
 
+const input=ref('Testing')
+
+const value=ref('')
+const vFocus={
+    mounted:(el)=>el.focus()
+}
+
+const emptyze=()=>{
+    input.value=''
+}
 </script>
 
 <template>
@@ -14,13 +25,14 @@
     top-0
     left-0
     right-0
+    z-10
     ">
         <!-- the search engine -->
         <div class="
         flex
         gap-10
         items-center
-        w-1/2
+        md:w-1/2
         ">
             <!-- the google icon -->
             <div class="
@@ -35,12 +47,12 @@
             flex
             w-full
             ">
-                <input type="text" value="Bahir dar"
+                <input v-model="input" v-focus type="text" 
                 class="w-full rounded-full rounded-r-none outline-none px-5 py-2 focus:bg-gray-200 hover:bg-gray-200 transition duration-200"
-                >
+                placeholder="Input Search Input">
                 <!-- the absolute button -->
-                <button class="absolute right-20 -top-2 text-5xl font-light ">&times;</button>
-                <button class=" w-20 rounded-r-full bg-gray-300"><i class="fa-solid fa-search"></i></button>
+                <button class="absolute right-10 md:right-20 -top-1 md:-top-2 text-4xl md:text-5xl font-light " @click="emptyze">&times;</button>
+                <button class=" w-10 md:w-20 rounded-r-full bg-gray-300"><i class="fa-solid fa-search"></i></button>
             </div>
         </div>
 

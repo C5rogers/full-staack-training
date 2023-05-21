@@ -46,7 +46,7 @@ import SideBar from './SideBar.vue';
         </div>
 
         <!-- the main container -->
-        <div class="px-32 w-full min-h-screen grid grid-cols-2 gap-5">
+        <div class="px-32 w-full min-h-screen grid md:grid-cols-2 gap-5">
             <!-- the most left -->
             <div>
                 <!-- the one -->
