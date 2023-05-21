@@ -191,11 +191,12 @@ import SideBar from './SideBar.vue';
 
                 </div>
             </div>
+            <div class="flex flex-col gap-5 mt-10 p-3 border rounded-lg ml-5">
+                <SideBar/>
+            </div>
         </div>
 
         <!-- the side bar -->
-        <div>
-            <SideBar/>
-        </div>
+        
     </main>
 </template>

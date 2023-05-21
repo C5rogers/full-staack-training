@@ -36,11 +36,11 @@
             w-full
             ">
                 <input type="text" value="Bahir dar"
-                class="w-full rounded-full rounded-r-none outline-none px-5 py-2 shadow-lg"
+                class="w-full rounded-full rounded-r-none outline-none px-5 py-2 focus:bg-gray-200 hover:bg-gray-200 transition duration-200"
                 >
                 <!-- the absolute button -->
                 <button class="absolute right-20 -top-2 text-5xl font-light ">&times;</button>
-                <button class=" w-20 rounded-r-full bg-gray-300 shadow-lg"><i class="fa-solid fa-search"></i></button>
+                <button class=" w-20 rounded-r-full bg-gray-300"><i class="fa-solid fa-search"></i></button>
             </div>
         </div>
 
