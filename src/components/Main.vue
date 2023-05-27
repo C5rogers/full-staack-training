@@ -1,7 +1,16 @@
 <script setup>
 import { useRouter } from 'vue-router';
 import { ref } from 'vue';
+import { useData } from '../composable/useData';
+import { onMounted } from 'vue';
 
+const {countryList,getAllCountryList}=useData()
+
+
+onMounted(() => {
+    getAllCountryList()
+    console.log(countryList)
+})
 
 const form=ref('')
 
